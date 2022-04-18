@@ -26,8 +26,10 @@ public class Main {
 
     public static void main(String[] args) {
         Integer[] arrayOfInteger = {1,2,3,4,5,6,7,8,9};
+        System.out.println("Выводим оригинальный массим");
         printArray(arrayOfInteger);
         System.out.println("------");
+        System.out.println("Выводим перевернытый массим");
         arrayReverce(arrayOfInteger);
         printArray(arrayOfInteger);
         System.out.println("------");
@@ -35,8 +37,9 @@ public class Main {
 
         List list = Arrays.asList(arrayOfInteger);
         Collections.reverse(list);
-
+        System.out.println("Выводим еще раз перевернытый массим");
         list.stream().forEach(i-> System.out.println(i));
+        System.out.println("------");
 
 
     }
